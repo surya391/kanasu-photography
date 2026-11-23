@@ -22,17 +22,16 @@ export function PortfolioTile({ item, index }: { item: PortfolioItem; index: num
     <figure
       className={cn(
         "group relative w-full overflow-hidden rounded-2xl bg-ink shadow-card",
-        !item.src && (item.aspect ?? "aspect-[3/4]"),
+        item.src ? "aspect-[4/5]" : (item.aspect ?? "aspect-[3/4]"),
       )}
     >
       {item.src ? (
         <Image
           src={item.src}
           alt={item.alt ?? item.title}
-          width={0}
-          height={0}
+          fill
           sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-          className="block h-auto w-full transition-transform duration-700 group-hover:scale-105"
+          className="object-cover object-[50%_30%] transition-transform duration-700 group-hover:scale-105"
         />
       ) : (
         <div className={cn("absolute inset-0 flex flex-col justify-between bg-linear-to-br p-5", toneFor(item.id))}>

@@ -5,9 +5,15 @@ import { InquiryForm } from "@/components/features/contact/InquiryForm";
 import { Container } from "@/components/ui/Container";
 import { MAPS_URL, SITE } from "@/constants/site";
 
+const title = "Contact & Booking";
+const description =
+  "Book Kanasu Photography in Mandya — call, WhatsApp, email or send an enquiry online.";
+
 export const metadata: Metadata = {
-  title: "Contact & Booking",
-  description: "Book Kanasu Photography in Mandya — call, WhatsApp, email or send an enquiry online.",
+  title,
+  description,
+  openGraph: { title, description, url: "/contact" },
+  twitter: { title, description },
 };
 
 export default function ContactPage() {

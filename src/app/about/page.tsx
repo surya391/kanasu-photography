@@ -9,9 +9,15 @@ import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SITE } from "@/constants/site";
 
+const title = "About";
+const description =
+  `Meet ${SITE.owner} and the story behind Kanasu Photography, Mandya.`;
+
 export const metadata: Metadata = {
-  title: "About",
-  description: `Meet ${SITE.owner} and the story behind Kanasu Photography, Mandya.`,
+  title,
+  description,
+  openGraph: { title, description, url: "/about" },
+  twitter: { title, description },
 };
 
 const VALUES = [

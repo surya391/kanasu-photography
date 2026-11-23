@@ -7,7 +7,7 @@ import { SERVICES } from "@/constants/services";
 
 export function ServicesPreview() {
   return (
-    <section className="py-16 sm:py-20 lg:py-28">
+    <section className="bg-white py-16 sm:py-20 lg:py-28">
       <Container>
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <SectionHeading
@@ -26,10 +26,10 @@ export function ServicesPreview() {
               <Reveal delay={(i % 3) * 0.08} className="h-full">
                 <Link
                   href={`/services#${service.slug}`}
-                  className="group relative flex h-full min-h-56 flex-col justify-between overflow-hidden rounded-card border border-line bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand/40 hover:shadow-card sm:p-8"
+                  className="group relative flex h-full min-h-56 flex-col justify-between overflow-hidden rounded-card border border-line bg-paper p-6 transition-all duration-300 hover:-translate-y-1 hover:border-brand/40 hover:shadow-card sm:p-8"
                 >
                   <div className="flex items-start justify-between">
-                    <span className="flex size-12 items-center justify-center rounded-2xl bg-sand text-brand transition-colors group-hover:bg-brand group-hover:text-white">
+                    <span className="flex size-12 items-center justify-center rounded-2xl bg-white text-brand ring-1 ring-line transition-colors group-hover:bg-brand group-hover:text-white">
                       <service.icon className="size-6" aria-hidden />
                     </span>
                     <ArrowUpRight className="size-5 text-muted transition-transform group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-brand" aria-hidden />

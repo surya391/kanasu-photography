@@ -4,9 +4,15 @@ import { PageHero } from "@/components/common/PageHero";
 import { PortfolioGallery } from "@/components/features/portfolio/PortfolioGallery";
 import { Container } from "@/components/ui/Container";
 
+const title = "Portfolio";
+const description =
+  "Browse wedding, pre-wedding, baby, maternity, album and editing work by Kanasu Photography.";
+
 export const metadata: Metadata = {
-  title: "Portfolio",
-  description: "Browse wedding, pre-wedding, baby, maternity, album and editing work by Kanasu Photography.",
+  title,
+  description,
+  openGraph: { title, description, url: "/portfolio" },
+  twitter: { title, description },
 };
 
 export default function PortfolioPage() {

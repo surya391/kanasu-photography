@@ -16,6 +16,8 @@ export interface Service {
   description: string;
   includes: readonly string[];
   icon: LucideIcon;
+  image: string;
+  imageAlt: string;
 }
 
 export type PortfolioCategory =

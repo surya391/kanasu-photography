@@ -23,6 +23,8 @@ export const SERVICES: readonly Service[] = [
       "Photo & video options",
     ],
     icon: Heart,
+    image: "/portfolio/haldi-02.jpg",
+    imageAlt: "Haldi ceremony candid",
   },
   {
     slug: "pre-post-wedding",
@@ -37,6 +39,8 @@ export const SERVICES: readonly Service[] = [
       "Save-the-date material",
     ],
     icon: Sparkles,
+    image: "/portfolio/prewedding-01.jpg",
+    imageAlt: "Couple walking hand in hand",
   },
   {
     slug: "baby-shoot",
@@ -51,6 +55,8 @@ export const SERVICES: readonly Service[] = [
       "Comfort-first scheduling",
     ],
     icon: Baby,
+    image: "/portfolio/baby-05.jpg",
+    imageAlt: "Toddler in a magenta frock outdoors",
   },
   {
     slug: "maternity-shoot",
@@ -65,6 +71,8 @@ export const SERVICES: readonly Service[] = [
       "Soft, natural look",
     ],
     icon: Flower2,
+    image: "/portfolio/maternity-01.jpg",
+    imageAlt: "Expecting couple portrait",
   },
   {
     slug: "album-design",
@@ -79,6 +87,8 @@ export const SERVICES: readonly Service[] = [
       "Wedding, baby & maternity albums",
     ],
     icon: BookOpen,
+    image: "/portfolio/engagement-03.jpg",
+    imageAlt: "Engagement couple among palm leaves",
   },
   {
     slug: "video-photo-editing",
@@ -93,6 +103,8 @@ export const SERVICES: readonly Service[] = [
       "Reels and social cuts",
     ],
     icon: Clapperboard,
+    image: "/portfolio/pics-01.jpg",
+    imageAlt: "Colour-graded portrait at sunset",
   },
   {
     slug: "photo-frames",
@@ -107,6 +119,8 @@ export const SERVICES: readonly Service[] = [
       "Wall and table options",
     ],
     icon: Frame,
+    image: "/portfolio/design-01.jpg",
+    imageAlt: "Framed 12x18 collage of a couple",
   },
 ];
 

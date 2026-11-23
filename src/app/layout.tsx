@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Manrope } from "next/font/google";
+import { WhatsAppButton } from "@/components/common/WhatsAppButton";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { SITE } from "@/constants/site";
@@ -30,6 +31,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     siteName: SITE.name,
+    url: "/",
     title: SITE.name,
     description: SITE.description,
     images: [{ url: "/images/kanasu-signature.jpg", width: 1225, height: 700, alt: SITE.name }],
@@ -46,7 +48,11 @@ export const viewport: Viewport = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Photographer",
+  "@id": `${SITE.url}/#business`,
+  url: SITE.url,
+  image: `${SITE.url}/images/kanasu-signature.jpg`,
   name: SITE.name,
+  areaServed: SITE.address.city,
   founder: SITE.owner,
   description: SITE.description,
   email: SITE.email,
@@ -76,6 +82,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </main>
         <Footer />
+        <WhatsAppButton />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
       </body>
     </html>

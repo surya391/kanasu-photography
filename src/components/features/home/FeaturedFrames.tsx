@@ -17,7 +17,7 @@ export function FeaturedFrames() {
           title="Stories we've had the honour of telling."
           description="A glimpse across weddings, newborns, maternity and the albums that bring them together."
         />
-        <ul className="mt-12 columns-1 gap-5 sm:columns-2 lg:columns-3 [&>li]:mb-5 [&>li]:break-inside-avoid">
+        <ul className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item, i) => (
             <li key={item.id}>
               <Reveal delay={(i % 3) * 0.08}>
